@@ -3,9 +3,48 @@
 <head> 
 <title> ALLS </title> 
 <link rel="shortcut icon" href="ALLS.jpg" type="image/png">
-<style> 
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+crossorigin="anonymous">
+<style type="text/css"> 
+
+#menu 
+{ 
+border: 1px solid rgba(255, 255, 255, 0.705); 
+color:white; 
+width:178px; 
+padding:6px; 
+margin:0px; 
+background-color:black; 
+font-size:1.1em; 
+} 
+#list 
+{ 
+border-bottom:1px solid; 
+width:140px; 
+list-style-type: none; 
+margin:0px; 
+padding:0px; 
+font-size:1.4em; 
+} 
+#list li 
+{ 
+padding:12px; 
+border-bottom-style:solid; 
+border-bottom-color:#242424; 
+border-width:1px; 
+background-color:#242424; 
+} 
+a {
+        text-decoration: none;
+        color: #7586AE;
+}
+#img 
+{ 
+margin:-5px; 
+} 
 body { 
-background:url(kosmos.jpg); 
+background:url(5.gif); 
+background-size: 4.57%;
 } 
 .header { 
 padding: 1px; 
@@ -15,7 +54,12 @@ top: 0px;
 right: 0px; 
 z-index: 997; 
 background: black; 
-opacity: 1;
+opacity: 0.87;
+}
+.header2 {
+        padding: 1px;
+        color: white;
+        left: 100px;
 }
 .left {
 padding: 100px 0; 
@@ -45,9 +89,10 @@ background-size: cover;
 max-width: 1140px; 
 padding: 0 15px; 
 margin: 0 auto; 
+
 } 
 .banner{ 
-padding: 282px 0; 
+padding: 300px 0; 
 } 
 .banner-text_header { 
 color: white; 
@@ -72,7 +117,7 @@ font-size: 25px;
     
 }
 .pic {
-    text-align: center;
+    text-align: left;
    }
    .pic2 {
     text-align: left;
@@ -87,6 +132,16 @@ font-weight: 300;
 font-size: 25px;
 padding: 0 5px; 
 } 
+.card {
+        padding: 20px;
+    }
+    .card-body {
+        color:blue;
+    }
+    .navbar-brand {
+            height: 1px;
+            opacity: 0;
+    }
 *{ 
 padding: 0; 
 margin: 0; 
@@ -94,11 +149,11 @@ margin: 0;
 </style> 
 </head> 
 <body> 
-        <header class="header"> 
+        <header class="header" "header2"> 
                 <div class="container"> 
                 <div class="menu"> 
                 <div class="menu-logo"> 
-                        <p class="pic"><img src="14.gif" width="100" height="65" alt="pic"></p>
+                        <p class="pic"><img src="ALLS.jpg" width="100" height="65" alt="pic"></p>
                 </div> 
                 <div class="menu-nav-container"> 
                 <div class="container"> 
@@ -110,6 +165,11 @@ margin: 0;
                 </div> 
                 </div> 
                 </div> 
+                <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+
+                        </div>
+                    </nav>
                     </header> 
     <left> 
     <ltft class="left"> 
@@ -127,7 +187,7 @@ margin: 0;
             </div> 
             </div> 
             </div> 
-            </div> 
+            </div>
         </left> 
 <main class="main"> 
 <section class="section section-banner"> 
@@ -170,44 +230,101 @@ margin: 0;
 <li> <a id="Техника" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#01> Техника </a> </li> 
 <li> <a id="Услуги" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#00> Услуги </a> </li> 
 <li> <a id="Фирмы" href=https://www.apple.com/ru/shop/buy-iphone/iphone-se> Фирмы </a> </li> 
-</ul> 
+</ul>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card" >
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="article.html" class="btn btn-success">Go to Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main> 
 </body> 
 <head> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
-<style type="text/css"> 
-#menu 
-{ 
-border:1px solid rgba(255, 255, 255, 0.705); 
-color:white; 
-width:178px; 
-padding:6px; 
-margin:0px; 
-background-color:black; 
-font-size:1.1em; 
-} 
-#list 
-{ 
-border-bottom:1px solid; 
-width:140px; 
-list-style-type: none; 
-margin:0px; 
-padding:0px; 
-font-size:1.4em; 
-} 
-#list li 
-{ 
-padding:12px; 
-border-bottom-style:solid; 
-border-bottom-color:#242424; 
-border-width:1px; 
-background-color:#242424; 
-} 
-#img 
-{ 
-margin:-5px; 
-} 
-
-</style> 
+ 
 
 <script type="text/javascript"> 
 $(document).ready(function(){ 
@@ -235,4 +352,4 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
 }); 
 </script> 
 </head> 
-</html>
+</html> 
