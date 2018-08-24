@@ -7,22 +7,23 @@
         <style type="text/css"> 
 #menu 
 { 
-border: 1px solid rgba(255, 255, 255, 0.705); 
+border: 0px solid rgba(255, 255, 255, 0.705); 
 color:white; 
 width:178px; 
-padding:6px; 
+padding:7px; 
 margin:0px; 
 background-color:black; 
-font-size:1.1em; 
+font-size:1.4em; 
 } 
 #list 
 { 
 border-bottom:1px solid; 
-width:150px; 
+width:195px; 
 list-style-type: none; 
 margin:0px; 
 padding:0px; 
 font-size:1.4em; 
+color: rgb(255, 255, 255);
 } 
 #list li 
 { 
@@ -55,13 +56,7 @@ background: black;
 opacity: 0.87;
 }
 .left {
-padding: 100px 0; 
-position: absolute; 
-left: 0px; 
-top: 100px; 
-right: 1000px;
-z-index: 997; 
-background: skyblue; 
+
 }
 .menu-nav_item { 
 list-style: none; 
@@ -83,11 +78,11 @@ padding: 0 15px;
 margin: 0 auto; 
 } 
 .banner{ 
-padding: 300px 0; 
+padding: 255px 0; 
 } 
 .banner-text_header { 
 color: white; 
-font-size: 100px; 
+font-size: 150px; 
 font-weight: 600; 
 text-align: center; 
 } 
@@ -102,17 +97,21 @@ font-weight: 300;
 font-size: 25px; 
 }
 .menu {
-
 }
 .menu2 {
     
 }
 .pic {
-
 }
 .form {
-color: red;
-text-align: right;
+
+}
+.reg {
+    color: darkblue;
+    text-align: right;
+}
+.btn {
+
 }
 .banner-text_body span { 
 color: white; 
@@ -185,7 +184,7 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
         </header> 
       
         <left class="left"> 
-                        <p class="pic"><img src="10.gif" width="80" height="55" alt="pic"></p>
+                        <p class="pic"></p>
         </left> 
                 <main class="main"> 
                 <section class="section section-banner"> 
@@ -205,38 +204,59 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
 </div> 
 </section> 
 </main>
-<h1>Вход</h1>
-<form action="#" method="post">
-<label for="login-frield">Логин</label>
-<br>
-<input type="text" name="login" id="login-field">
-<br>
-<label for="password-field">Пароль</label>
-<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+                <p id="menu"> <img id="img" src="menu.png" width="60px" height="40px" /> 
+                    </nav>    
+      </div> 
+      <ul id="list"> 
+            <a li id="Сайты" href=https://www.apple.com/ru/shop/buy-iphone/iphone-x> <li> Сайты </li> </a> 
+            <a li id="Развлечения" href=https://www.apple.com/ru/shop/buy-iphone/iphone-8#01> <li> Развлечения </li> </a> 
+            <a id="Игры" href=https://www.apple.com/ru/shop/buy-iphone/iphone-8#00> <li> Игры </li> </a> 
+            <a id="Еда" href=https://www.apple.com/ru/shop/buy-iphone/iphone-7#01> <li> Еда </li> </a>
+            <a li id="Одежда" href=https://www.apple.com/ru/shop/buy-iphone/iphone-7#00> <li> Одежда </li> </a> 
+            <a li id="Техника" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#01> <li> Техника </li> </a> 
+            <a li id="Услуги" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#00> <li> Услуги </li> </a> 
+            <a li id="Фирмы" href=https://www.apple.com/ru/shop/buy-iphone/iphone-se> <li> Фирмы </li> </a>    
+        </ul>
 
-<input type="text" name="password" id="password-field">
-<br>
-<input type="submit" value="Войти">
-</form>
-
-<p id="menu"> <img id="img" src="menugif.gif" width="60px" height="40px" /> 
-<ul id="list"> 
-<li> <a id="Сайты" href=https://www.apple.com/ru/shop/buy-iphone/iphone-x> Сайты </a> </li> 
-<li> <a id="Развлечения" href=https://www.apple.com/ru/shop/buy-iphone/iphone-8#01> Развлечения </a> </li> 
-<li> <a id="Игры" href=https://www.apple.com/ru/shop/buy-iphone/iphone-8#00> Игры </a> </li> 
-<li> <a id="Еда" href=https://www.apple.com/ru/shop/buy-iphone/iphone-7#01> Еда </a> </li> 
-<li> <a id="Одежда" href=https://www.apple.com/ru/shop/buy-iphone/iphone-7#00> Одежда </a> </li> 
-<li> <a id="Техника" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#01> Техника </a> </li> 
-<li> <a id="Услуги" href=https://www.apple.com/ru/shop/buy-iphone/iphone6s#00> Услуги </a> </li> 
-<li> <a id="Фирмы" href=https://www.apple.com/ru/shop/buy-iphone/iphone-se> Фирмы </a> </li> 
-</ul>
 
     <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <img class="card-img-top" src="nike.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Сайт</p>
                             <a href="ALLS.html" class="btn btn-success">Смотеть</a>
@@ -245,7 +265,7 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
                 </div>
                 <div class="col-sm-12 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <img class="card-img-top" src="apple.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Сайт</p>
                             <a href="article.html" class="btn btn-success">Смотеть</a>
@@ -254,7 +274,7 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
                 </div>
                 <div class="col-sm-12 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="13.gif" alt="Card image cap">
+                        <img class="card-img-top" src="puma.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Сайт</p>
                             <a href="article.html" class="btn btn-success">Смотеть</a>
@@ -311,6 +331,19 @@ $("#Фирмы").mouseout(function(){ $("#Фирмы").css("color", "")});
             </div>
             
         </div>
-    </main> 
+    </main>
+    <h1 class="reg">Вход</h1>
+<form class="reg" method="post">
+<label for="login-frield">Логин</label>
+<br>
+<input type="text" name="login" id="login-field">
+<br>
+<label for="password-field">Пароль</label>
+<br>
+
+<input type="text" name="password" id="password-field">
+<br>
+<input type="submit" value="Войти">
+</form> 
         </body>  
 </html> 
